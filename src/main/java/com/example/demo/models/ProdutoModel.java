@@ -1,6 +1,6 @@
 package com.example.demo.models;
 
-import com.example.demo.enums.ProdutoEnum;
+import com.example.demo.enums.StatusProduto;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -16,7 +16,7 @@ public class ProdutoModel{
     private String nome;
     private String descricao;
     private Long preco;
-    private ProdutoEnum produtoEnum;
+    private StatusProduto produtoEnum;
 
     public ProdutoModel() {
     }
@@ -53,11 +53,11 @@ public class ProdutoModel{
         this.preco = preco;
     }
 
-    public ProdutoEnum getProdutoEnum() {
+    public StatusProduto getProdutoEnum() {
         return produtoEnum;
     }
 
-    public void setProdutoEnum(ProdutoEnum produtoEnum) {
+    public void setProdutoEnum(StatusProduto produtoEnum) {
         this.produtoEnum = this.produtoEnum;
     }
 }
